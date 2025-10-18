@@ -474,7 +474,7 @@ namespace AnnouncerMod
 
         private static string GetZoneFromZ(float z_pos)
         {
-            if (Mathf.Abs(z_pos) < 25.0f) return "Neutral";
+            if (Mathf.Abs(z_pos) < 13.3f) return "Neutral";
             if (z_pos > 0) return isRedTeamInPositiveZ ? "Red" : "Blue";
             return isRedTeamInPositiveZ ? "Blue" : "Red";
         }
